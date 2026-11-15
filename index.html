@@ -423,12 +423,7 @@
         <div class="subscribe-form">
           <p class="subscribe-text">Subscribe</p>
           <form class="form-footer">
-            <input
-              class="email-input"
-              type="email"
-              arealabel
-              placeholder="E-mail"
-            />
+            <input class="email-input" type="email" placeholder="E-mail" />
             <button class="form-footer-button" type="submit">
               Subscribe<svg width="24" height="24">
                 <use href="./images/icons.svg#send"></use>
@@ -447,7 +442,7 @@
         </button>
         <p class="p-modal">Leave your contact and we will call you back</p>
         <form>
-          <label for="username" id="username" class="modal-label">Name</label>
+          <label for="username" class="modal-label">Name</label>
           <div class="input-wrapper">
             <svg width="18px" height="24px" class="modal-svg">
               <use href="./images/icons.svg#person"></use>
@@ -459,25 +454,24 @@
               id="username"
             />
           </div>
-          <label for="phone" id="phone" class="modal-label">Phone</label>
+          <label for="phone" class="modal-label">Phone</label>
           <div class="input-wrapper">
             <svg width="18px" height="24px" class="modal-svg">
               <use href="./images/icons.svg#phone"></use>
             </svg>
             <input class="modal-input" type="tel" name="phone" id="phone" />
           </div>
-          <label for="email" id="email" class="modal-label">Email</label>
+          <label for="email" class="modal-label">Email</label>
           <div class="input-wrapper">
             <svg width="18px" height="24px" class="modal-svg">
               <use href="./images/icons.svg#email"></use>
             </svg>
             <input class="modal-input" type="email" name="email" id="email" />
           </div>
-          <label for="text" id="username" class="modal-label">Comment</label>
+          <label for="text" class="modal-label">Comment</label>
           <div class="input-wrapper">
             <textarea
               class="modal-input modal-textarea"
-              type="text"
               name="text"
               id="text"
               rows="5"
@@ -485,17 +479,23 @@
             >
             </textarea>
           </div>
-          <div>
-            <input name="" id="" />
-            <label for="">
-              <span>
-                <svg width="" height="">
-                  <use href="" />
+          <div class="modal-form-agreement">
+            <input
+              class="checkbox sr-only"
+              type="checkbox"
+              name="user_policy"
+              id="user_policy"
+            />
+            <label class="modal-form-policy" for="user_policy">
+              <span class="modal-form-checkbox">
+                <svg class="modal-form-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#check-mark"></use>
                 </svg>
               </span>
-              <span
-                >I accept the terms and conditions of the
-                <a href="#">Privacy Policy</a></span
+
+              I accept the terms and conditions of the
+              <a class="modal-form-link" href="#" target="_blank"
+                >Privacy Policy</a
               >
             </label>
           </div>
